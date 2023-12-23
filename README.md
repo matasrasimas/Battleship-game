@@ -35,6 +35,7 @@ Alternatively, if you have installed Maven on your machine, then you can follow 
 3. Start the development server by running `npm run dev`
 4. The terminal, in which you ran the command, will display the port, on which the frontend is running (most likely, it's `http://localhost:5173`)
 
+Note: make sure you launch the project on `http://localhost:5173` instead of `http://127.0.0.1:5173/` to avoid any unexpected behavior!
 
 ## Contributing
 
