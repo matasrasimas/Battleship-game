@@ -9,8 +9,6 @@ Before you begin, ensure you have the following prerequisites installed on your 
 - Java Development Kit (JDK) 8 or higher
 - Node.js and npm (Node Package Manager)
 
-Optionally:
-- Apache Maven (for building the Spring Boot application)
 
 ## Getting Started
 
@@ -21,11 +19,6 @@ Follow the steps below to set up and run the project locally.
 1. By using Java IDE, which supports Maven (preferably Intellij), open the project, which is stored in directory `backend`.
 2. Run the project by clicking 'run' button, which is located on the top of IDE (or by pressing `Shift+F10` on your keyboard).
 3. The backend server will start at http://localhost:8080.
-
-Alternatively, if you have installed Maven on your machine, then you can follow these steps to run backend:
-1. By using `cd` command, navigate to the root of backend, which is located in `backend` folder.
-2. Build the Spring Boot application using the following command: `mvn spring-boot:run`
-3. The backend server will start at `http://localhost:8080`.
 
 
 ### Frontend (React)
