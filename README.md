@@ -6,7 +6,7 @@ This project is a representation of battleship game, which is built with Spring 
 
 Before you begin, ensure you have the following prerequisites installed on your machine:
 
-- Java Development Kit (JDK) 8 or higher
+- Java IDE, which supports Maven (Preferably IntelliJ)
 - Node.js and npm (Node Package Manager)
 
 
