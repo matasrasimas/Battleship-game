@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173/"}, maxAge = 3600, allowCredentials = "true")
 public class GameController {
 
+    // Using sessions to ensure, that each player could play their own games at the same time
     private final GameService gameService;
 
     @Autowired
