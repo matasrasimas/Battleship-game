@@ -1,10 +1,16 @@
 package com.backend.backend.models;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class Game implements Serializable {
 
     private Board computerBoard;
@@ -15,52 +21,4 @@ public class Game implements Serializable {
     private String shootResultMessage;
     private GameStatus status;
 
-
-    public Board getComputerBoard() {
-        return computerBoard;
-    }
-
-    public void setComputerBoard(Board board) {
-        this.computerBoard = board;
-    }
-
-    public int getShipsRemaining() {
-        return shipsRemaining;
-    }
-
-    public void setShipsRemaining(int shipsRemaining) {
-        this.shipsRemaining = shipsRemaining;
-    }
-
-    public int getShootsRemaining() {
-        return shootsRemaining;
-    }
-
-    public void setShootsRemaining(int shotsRemaining) {
-        this.shootsRemaining = shotsRemaining;
-    }
-
-    public GameStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(GameStatus status) {
-        this.status = status;
-    }
-
-    public List<Ship> getShips() {
-        return ships;
-    }
-
-    public void setShips(List<Ship> ships) {
-        this.ships = ships;
-    }
-
-    public String getShootResultMessage() {
-        return shootResultMessage;
-    }
-
-    public void setShootResultMessage(String shootResultMessage) {
-        this.shootResultMessage = shootResultMessage;
-    }
 }
