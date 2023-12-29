@@ -18,7 +18,7 @@ Follow the steps below to set up and run the project locally.
 
 1. By using Java IDE, which supports Maven (preferably Intellij), open the project, which is stored in directory `backend`.
 2. Run the project by clicking 'run' button, which is located on the top of IDE (or by pressing `Shift+F10` on your keyboard).
-3. The backend server will start at http://localhost:8080.
+3. The backend server will start at `http://localhost:8080`.
 
 
 ### Frontend (React)
