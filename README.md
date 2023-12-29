@@ -23,7 +23,7 @@ Follow the steps below to set up and run the project locally.
 
 ### Frontend (React)
 
-1. By using `cd` command, navigate to the root frontend, which is located in `front` folder.
+1. By using `cd` command, navigate to the root frontend, which is located in `frontend` folder.
 2. Install the dependencies by running `npm install`
 3. Start the development server by running `npm run dev`
 4. The terminal, in which you ran the command, will display the port, on which the frontend is running (most likely, it's `http://localhost:5173`)
