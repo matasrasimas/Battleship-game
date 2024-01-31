@@ -17,7 +17,7 @@ public class Cell implements Serializable {
         this.isHit = isHit;
     }
 
-    public boolean getIsShip() {
+    public boolean isShip() {
         return isShip;
     }
 

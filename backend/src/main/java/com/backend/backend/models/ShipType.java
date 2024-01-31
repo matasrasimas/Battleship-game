@@ -1,6 +1,8 @@
 package com.backend.backend.models;
 
-public enum ShipType {
+import java.io.Serializable;
+
+public enum ShipType implements Serializable {
     CARRIER,
     BATTLESHIP,
     CRUISER,

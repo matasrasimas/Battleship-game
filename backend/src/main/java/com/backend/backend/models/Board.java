@@ -10,6 +10,10 @@ public class Board implements Serializable {
     private Cell[][] grid;
     private int size;
 
+    public Board(int size) {
+        this.size = size;
+    }
+
     public int getSize() {
         return size;
     }

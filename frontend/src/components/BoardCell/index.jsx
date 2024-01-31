@@ -26,11 +26,11 @@ const BoardCell = ({rowIndex, colIndex, cell}) => {
     <div
      onClick={handleShoot}
      className={`flex items-center justify-center block w-full h-full border border-black bg-gray-200 ${!cell.isHit && 'hover:bg-gray-400 cursor-pointer'}`}>
-        {(cell.isHit && !cell.isShip) && (
+        {(cell.isHit && !cell.ship) && (
           <FontAwesomeIcon icon={faCircle} />
         )}
 
-       {(cell.isHit && cell.isShip) && (
+       {(cell.isHit && cell.ship) && (
           <FontAwesomeIcon icon={faX} className='text-red-500 font-bold' />
         )}
 

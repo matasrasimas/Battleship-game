@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Game implements Serializable {
 
-    private Board computerBoard;
+    private Board board;
     private List<Ship> ships;
     private int shootsRemaining;
     private int shipsRemaining;
@@ -15,13 +15,16 @@ public class Game implements Serializable {
     private String shootResultMessage;
     private GameStatus status;
 
+    public Game() {
 
-    public Board getComputerBoard() {
-        return computerBoard;
     }
 
-    public void setComputerBoard(Board board) {
-        this.computerBoard = board;
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
     }
 
     public int getShipsRemaining() {

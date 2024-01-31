@@ -1,7 +1,9 @@
 package com.backend.backend.controllers;
 
 import com.backend.backend.models.Game;
+import com.backend.backend.services.BattleshipGameService;
 import com.backend.backend.services.GameService;
+import com.backend.backend.services.IBattleshipGameService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +15,10 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "http://localhost:5173/", maxAge = 3600, allowCredentials = "true")
 public class GameController {
 
-    private final GameService gameService;
+    private final IBattleshipGameService<Game> gameService;
 
     @Autowired
-    public GameController(GameService gameService) {
+    public GameController(IBattleshipGameService<Game> gameService) {
         this.gameService = gameService;
     }
 

@@ -89,7 +89,7 @@ const Home = () => {
                     <h2 className='game-subhdr text-blue-800'>{game && game.shootResultMessage}</h2>
                 </div>
                 <div className='flex flex-col items-center w-full'>
-                  <GameBoard board={game.computerBoard}/>
+                  <GameBoard board={game.board}/>
                   
                   
 
