@@ -1,11 +1,12 @@
 package com.backend.backend.components.interfaces;
 
 import com.backend.backend.models.Coordinates;
+import com.backend.backend.models.HasCoordinatesList;
 import com.backend.backend.models.Ship;
 
 import java.util.List;
 
-public interface CoordinatesManager<T> {
+public interface CoordinatesManager<T extends HasCoordinatesList > {
 
     Coordinates generateCoordinatesRandomly(int boardSize);
     void removeStartCoordinates(T ship);

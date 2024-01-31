@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
+
 public class Game implements Serializable {
 
     private Board board;
@@ -66,4 +67,5 @@ public class Game implements Serializable {
     public void setShootResultMessage(String shootResultMessage) {
         this.shootResultMessage = shootResultMessage;
     }
+
 }

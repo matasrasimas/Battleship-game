@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
+
 public class Board implements Serializable {
 
     private Cell[][] grid;

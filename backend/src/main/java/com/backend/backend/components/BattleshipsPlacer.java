@@ -57,16 +57,13 @@ public class BattleshipsPlacer implements Placer<Game> {
     private boolean shipPlacedSuccessfully(Ship ship) {
         Coordinates startCoords = coordinatesManager.generateCoordinatesRandomly(game.getBoard().getSize());
         coordinatesManager.initializeStartCoordinates(ship, startCoords);
-        if(rulesChecker.satisfies(game, ship)) {
-            addShipToGame(ship);
+        game.getShips().add(ship);
+        if(rulesChecker.satisfies(game)) {
+            placeShip(ship);
             return true;
         }
+        game.getShips().remove(ship);
         return false;
-    }
-
-    private void addShipToGame(Ship ship) {
-        placeShip(ship);
-        game.getShips().add(ship);
     }
 
     private void placeShip(Ship ship) {

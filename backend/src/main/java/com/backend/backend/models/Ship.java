@@ -1,10 +1,11 @@
 package com.backend.backend.models;
 
-
 import java.io.Serializable;
 import java.util.List;
 
-public class Ship implements Serializable {
+
+public class Ship implements Serializable, HasCoordinatesList {
+
     private int hitPoints;
 
     private boolean isHorizontal;
@@ -33,4 +34,5 @@ public class Ship implements Serializable {
     public void setHorizontal(boolean horizontal) {
         isHorizontal = horizontal;
     }
+
 }

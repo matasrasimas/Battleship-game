@@ -86,7 +86,9 @@ const Home = () => {
                     <h1 className='game-hdr'>Battleship Game</h1>
                     <h2 className='game-subhdr'>Ships remaining: {game && game.ships.length}</h2>
                     <h2 className={`game-subhdr ${(game && game.shootsRemaining <= 5) && 'text-red-500'}`}>Shoots remaining: {game && game.shootsRemaining}</h2>
-                    <h2 className='game-subhdr text-blue-800'>{game && game.shootResultMessage}</h2>
+                    <h2 className={`game-subhdr text-blue-800`}>
+                        {(game && game.shootResultMessage !== '') ? game.shootResultMessage : <span className='invisible'>invisible text placeholder</span>}
+                    </h2>
                 </div>
                 <div className='flex flex-col items-center w-full'>
                   <GameBoard board={game.board}/>

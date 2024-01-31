@@ -4,7 +4,11 @@ import BoardCell from '../BoardCell'
 
 const BoardRow = ({rowIndex, row}) => {
   return (
-    <div className='grid grid-cols-10'>
+    <div className='grid grid-cols-11'>
+      <div
+        className='flex items-center justify-center block w-full h-full border border-black bg-gray-400 font-bold'>
+          {rowIndex+1}
+      </div>
     {row.map((cell, colIndex) => (
       <BoardCell key={colIndex} rowIndex={rowIndex} colIndex={colIndex} cell={cell}/>
     ))}

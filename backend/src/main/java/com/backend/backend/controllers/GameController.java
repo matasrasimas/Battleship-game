@@ -1,8 +1,6 @@
 package com.backend.backend.controllers;
 
 import com.backend.backend.models.Game;
-import com.backend.backend.services.BattleshipGameService;
-import com.backend.backend.services.GameService;
 import com.backend.backend.services.IBattleshipGameService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +10,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/game")
-@CrossOrigin(origins = "http://localhost:5173/", maxAge = 3600, allowCredentials = "true")
+@CrossOrigin(origins = {"http://localhost:5173", "http://127.0.0.1:5173/"}, maxAge = 3600, allowCredentials = "true")
 public class GameController {
-
     private final IBattleshipGameService<Game> gameService;
+
 
     @Autowired
     public GameController(IBattleshipGameService<Game> gameService) {
